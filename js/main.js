@@ -153,3 +153,169 @@ else {
 
 }
 //"Else if statement ran"
+
+
+
+var string1 = "this is a string";
+
+for (var i = 0; i < string1.length; i = i + 1) {
+
+	console.log(i, string1[i]);
+
+};
+// 0 "t"
+// 1 "h"
+// 2 "i"
+// 3 "s"
+// 4 " "
+// 5 "i"
+// 6 "s"
+// 7 " "
+// 8 "a"
+// 9 " "
+// 10 "s"
+// 11 "t"
+// 12 "r"
+// 13 "i"
+// 14 "n"
+// 15 "g"
+
+
+
+var string2 = "coding";
+
+var total = 0;
+
+for (var i = 0; i < string2.length; i++) {
+
+	total = total + i;
+
+};
+
+console.log(total);
+//
+
+
+
+var string3 = "onomatopoeia";
+
+for (var i = 0; i < string3.length; i++) {
+
+	if(string3[i] == "o") {
+
+		console.log(i, string3[i]);
+
+	};
+
+};
+// 0 "o"
+// 2 "o"
+// 6 "o"
+// 8 "o"
+
+
+
+var string4 = "You're gonna need a bigger boat.";
+
+for (var i = 0; i < string4.length; i ++) {
+
+	if(string4[i] == "a" || string4[i] == "e" || string4[i] == "i" || string4[i] == "o" || string4[i] == "u") {
+
+		console.log(string4[i]);
+
+	};
+
+};
+//o
+//u
+//e
+//o
+//a
+//e
+//e
+//a
+//i
+//e
+//o
+//a
+
+
+
+function testStuff (a, b) {
+
+	if (a > 25 && b < 100) {
+
+		console.log (a + " is greater than 25 and " + b + " is less than 100");
+
+}
+
+	else {
+
+		console.log (a + "is NOT greater than 25 or " + b + " is NOT less than 100");
+
+	};
+
+};
+
+testStuff(10, 101);
+
+testStuff(26, 99);
+
+testStuff(100, 25);
+
+
+
+function testStuff2 (c, d) {
+
+	if(c == 25) {
+
+		return c + " is equal to 25";
+
+	}
+
+	else if (d <= 100) {
+
+		return d + " is less than or equal to 100"
+
+	}
+
+	else {
+
+		return "Neither if nor else if statement ran";
+
+	};
+
+};
+
+testStuff2(26, 101);
+//else
+testStuff2(25, 99);
+//if
+testStuff2(102, 24);
+//else if
+
+
+function countVowels (someString) {
+
+	var vowels = 0;
+
+	for(var i = 0; i < someString.length; i++) {
+
+		if(someString[i] == "a" || someString[i] == "e" || someString[i] == "i" || someString[i] == "o" || someString[i] == "u") {
+
+			vowels++
+
+		};
+
+	};
+
+	return vowels;
+
+};
+
+countVowels ("I am the very model of a modern major general");
+//14
+countVowels ("Exeunt pursued by a bear");
+//8
+countVowels ("o123456789o");
+//2
